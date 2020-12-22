@@ -2,8 +2,9 @@
 
 ## A mini React project to showcase Breaking Bad characters and details about them 
 
-![Capture](https://user-images.githubusercontent.com/55017730/102917591-836d3200-44ab-11eb-9631-c29645ed7a69.PNG)
+![Capture](https://user-images.githubusercontent.com/55017730/102918075-4eadaa80-44ac-11eb-99ad-ccfb1ed3f3df.PNG)
 
+## *Hover over the characters to see further details*
 
 
 ## 🧤 How to run:
