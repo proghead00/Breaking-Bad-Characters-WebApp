@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23160000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%232d0000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23430000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235a0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23700000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	color: whitesmoke;
+	margin: 0;
+}
+
+.character {
+	border-radius: 7px;
+	box-shadow: 3px 3px 5px rgba(87, 15, 15, 1.6);
+	width: 250px;
+	background-color: rgb(129, 38, 38);
+	margin: 1rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.character img {
+	max-width: 100%;
+}
+
+.character-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.character-info {
+	display: flex;
+
+	/* align-items: center; */
+	flex-direction: column;
+	margin: 0;
+	/* justify-content: space-between; */
+	padding: 1rem;
+}
+.name {
+	font-size: 30px;
+
+	margin: 0;
+}
+.stat {
+	font-size: 15px;
+	font-weight: lighter;
+}
+.rule {
+	border: 1px solid rgb(168, 82, 82);
+	width: 100%;
+}
+
+.character-over {
+	background-color: #fff;
+	padding: 2rem;
+	position: absolute;
+	max-height: 100%;
+	overflow: auto;
+	left: 0;
+	color: #111;
+	bottom: 0;
+	right: 0;
+	max-height: 100%;
+	transform: translateY(101%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.character:hover .character-over {
+	transform: translateY(0%);
+}
+header {
+	display: flex;
+	padding: 1rem;
+	color: whitesmoke;
+	justify-content: flex-end;
+}
+.search {
+	display: flex;
+	background-color: transparent;
+	border: 3px solid #dbc169;
+	border-radius: 50px;
+	color: rgb(248, 239, 239);
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+	color: #ebdcdc;
+}
+
+.search:focus {
+	background-color: transparent;
+	outline: none;
 }
