@@ -6,7 +6,7 @@ const characters_API = "https://www.breakingbadapi.com/api/characters";
 
 const quotes_API = "https://www.breakingbadapi.com/api/quotes";
 
-const search_API = "https://www.breakingbadapi.com/api//api/characters?name=";
+const search_API = "https://www.breakingbadapi.com/api/characters?name=";
 
 function App() {
 	const [characters, setCharacters] = useState([]);
