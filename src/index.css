@@ -33,6 +33,8 @@ body {
 }
 
 .character-container {
+	padding-left: 3.3em;
+
 	display: flex;
 	flex-wrap: wrap;
 }
