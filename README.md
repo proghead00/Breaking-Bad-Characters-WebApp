@@ -4,7 +4,7 @@
 
 ![Capture](https://user-images.githubusercontent.com/55017730/102918075-4eadaa80-44ac-11eb-99ad-ccfb1ed3f3df.PNG)
 
-## *Hover over the characters to see further details*
+## *Hover over the characters to see further details like date of birth, nickname, quotes, etc.*
 
 # [Live Site](https://brba-showcase.netlify.app/) 😏
 ## 🧤 How to run:
