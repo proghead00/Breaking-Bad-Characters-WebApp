@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 
 const characters_API = "https://www.breakingbadapi.com/api/characters";
 
-const quotes_API = "https://www.breakingbadapi.com/api/quotes";
+// const quotes_API = "https://www.breakingbadapi.com/api/quotes";
 
 const search_API = "https://www.breakingbadapi.com/api/characters?name=";
 
 function App() {
 	const [characters, setCharacters] = useState([]);
 
-	const [quotes, setQuotes] = useState([]);
+	// const [quotes, setQuotes] = useState([]);
 
 	const [searchTerm, setSearchTerm] = useState("");
 
@@ -23,23 +23,27 @@ function App() {
 				setCharacters(data);
 			});
 
-		fetch(quotes_API)
-			.then((res) => res.json())
-			.then((quotes_data) => {
-				// console.log(quotes_data);
-				setQuotes(quotes_data);
-			});
+		// fetch(quotes_API)
+		// 	.then((res) => res.json())
+		// 	.then((quotes_data) => {
+		// 		console.log(quotes_data);
+		// 		setQuotes(quotes_data);
+		// 	});
 	}, []);
 
 	const submitHandler = (e) => {
 		e.preventDefault();
 
-		fetch(search_API + searchTerm)
-			.then((res) => res.json())
-			.then((data) => {
-				// console.log(data);
-				setCharacters(data);
-			});
+		if (searchTerm) {
+			fetch(search_API + searchTerm)
+				.then((res) => res.json())
+				.then((data) => {
+					// console.log(data);
+					setCharacters(data);
+				});
+
+			setSearchTerm("");
+		}
 	};
 
 	const handleOnChange = (e) => {
@@ -65,9 +69,9 @@ function App() {
 					characters.map((character) => (
 						<Character key={character.id} {...character} />
 					))}
-
+				{/* 
 				<Character {...quotes} />
-				{/* {quotes.length > 0 && quotes.map((quote) => <Character {...quote} />)} */}
+				{quotes.length > 0 && quotes.map((quote) => <Character {...quote} />)} */}
 			</div>
 		</div>
 	);
