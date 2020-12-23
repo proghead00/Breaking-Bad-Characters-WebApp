@@ -2,7 +2,7 @@
 
 ## A mini React project to showcase Breaking Bad characters and details about them 
 
-![Capture](https://user-images.githubusercontent.com/55017730/102970430-80128e80-451d-11eb-8a6c-ff3efcfbf691.PNG)
+![Capture](https://user-images.githubusercontent.com/55017730/102971131-c9afa900-451e-11eb-87f8-9b296bac88f7.PNG)
 
 ## *Hover over the characters to see further details like date of birth, nickname, quotes, etc.*
 
