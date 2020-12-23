@@ -15,6 +15,7 @@ body {
 }
 
 .character {
+	cursor: pointer;
 	border-radius: 7px;
 	box-shadow: 3px 3px 5px rgba(87, 15, 15, 1.6);
 	width: 250px;
