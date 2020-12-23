@@ -6,7 +6,7 @@
 
 ## *Hover over the characters to see further details*
 
-
+# [Live Site](https://brba-showcase.netlify.app/) 😏
 ## 🧤 How to run:
 
  ### <code> npm i && npm start </code> to install the node modules and start the development server
